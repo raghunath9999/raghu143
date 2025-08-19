@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Raghunath Reddy — Portfolio</title>
+  <meta name="description" content="Portfolio profile of Raghunath Reddy from Garden City University. Skills: C, C++, Python, HTML." />
+  <meta name="author" content="Raghunath Reddy" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='46' fill='%2300bcd4'/%3E%3Ctext x='50' y='58' text-anchor='middle' font-size='44' font-family='Arial' fill='white'%3ERR%3C/text%3E%3C/svg%3E" />
+  <style>
+    :root{
+      --bg: #0b0f14;
+      --panel: #111826;
+      --text: #ebf2ff;
+      --muted: #9fb3c8;
+      --brand: #60a5fa;
+      --accent: #34d399;
+      --ring: #93c5fd55;
+    }
+    @media (prefers-color-scheme: light){
+      :root{ --bg:#f8fafc; --panel:#ffffff; --text:#0b1220; --muted:#4b5563; --brand:#2563eb; --accent:#059669; --ring:#2563eb22; }
+    }
+    *{ box-sizing:border-box }
+    html,body{ height:100% }
+    body{
+      margin:0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, 'Helvetica Neue', Arial, 'Apple Color Emoji', 'Segoe UI Emoji';
+      background: radial-gradient(1200px 700px at 10% -10%, #0ea5e90f 0, transparent 60%),
+                  radial-gradient(1000px 700px at 110% 10%, #34d39910 0, transparent 60%),
+                  var(--bg);
+      color: var(--text);
+      line-height:1.6;
+    }
+    .container{ max-width:1000px; margin:0 auto; padding:24px; }
+    .card{ background:var(--panel); border:1px solid #ffffff10; border-radius:20px; box-shadow: 0 10px 30px #00000040; }
+    .header{ display:grid; grid-template-columns: 120px 1fr; gap:24px; padding:28px; align-items:center; }
+    .avatar{ width:120px; height:120px; border-radius:20px; background: linear-gradient(135deg, var(--brand), var(--accent)); display:grid; place-items:center; color:white; font-weight:700; font-size:42px; letter-spacing:1px; }
+    .title{ margin:0; font-size: clamp(28px, 4vw, 40px); line-height:1.2 }
+    .subtitle{ margin:6px 0 0; color:var(--muted) }
+    .badges{ display:flex; flex-wrap:wrap; gap:8px; margin-top:14px }
+    .badge{ padding:6px 10px; border-radius:999px; background:#ffffff08; border:1px solid #ffffff14; font-size:14px }
+    .cta{ display:flex; gap:12px; margin-top:16px; flex-wrap:wrap }
+    .btn{ display:inline-flex; align-items:center; gap:8px; padding:10px 14px; border-radius:12px; border:1px solid #ffffff18; background:#ffffff0a; color:var(--text); text-decoration:none; transition:.2s transform, .2s box-shadow; }
+    .btn:focus{ outline: none; box-shadow: 0 0 0 6px var(--ring); }
+    .btn:hover{ transform: translateY(-1px); box-shadow: 0 8px 20px #00000030; }
+    .grid{ display:grid; grid-template-columns: repeat(12, 1fr); gap:20px; padding:24px; }
+    .section{ grid-column: span 12; padding:20px; border-radius:16px; border:1px solid #ffffff12; background:#ffffff05; }
+    @media (min-width: 800px){ .section.half{ grid-column: span 6; } }
+    h2{ margin:0 0 10px; font-size:22px }
+    p{ margin:8px 0 }
+    ul{ margin:10px 0 0 20px }
+    .chips{ display:flex; flex-wrap:wrap; gap:10px; margin-top:6px }
+    .chip{ padding:8px 12px; border-radius:999px; background:#ffffff0a; border:1px solid #ffffff15; font-weight:600 }
+    .footer{ text-align:center; color:var(--muted); padding:30px 10px; font-size:14px }
+    .link{ color:var(--brand); text-decoration:none }
+    .link:hover{ text-decoration:underline }
+    .mono{ font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+    .sr-only{ position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0; }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <!-- Header Card -->
+    <header class="card header">
+      <div class="avatar" aria-hidden="true">RR</div>
+      <div>
+        <h1 class="title">Raghunath Reddy</h1>
+        <p class="subtitle">Student • Garden City University • Developer</p>
+        <div class="badges" aria-label="Core skills">
+          <span class="badge">C</span>
+          <span class="badge">C++</span>
+          <span class="badge">Python</span>
+          <span class="badge">HTML</span>
+        </div>
+        <div class="cta">
+          <a class="btn" href="https://github.com/raghunath9999" target="_blank" rel="noopener">🔗 GitHub Profile</a>
+          <a class="btn" href="#contact">📞 Contact</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Content Grid -->
+    <section class="grid card">
+      <!-- About -->
+      <div class="section half">
+        <h2>About</h2>
+        <p>
+          I am <strong>Raghunath Reddy</strong>, an aspiring software developer from <strong>Garden City University</strong>.
+          I enjoy building clean, user-friendly solutions and sharpening my fundamentals in <span class="mono">C, C++, Python</span> and web development with <span class="mono">HTML</span>.
+        </p>
+      </div>
+
+      <!-- Skills -->
+      <div class="section half">
+        <h2>Skills</h2>
+        <div class="chips" aria-label="Technical skills">
+          <span class="chip">C — Data Structures</span>
+          <span class="chip">C++ — OOP & STL</span>
+          <span class="chip">Python — Scripting</span>
+          <span class="chip">HTML — Semantic Web</span>
+        </div>
+      </div>
+
+      <!-- Projects -->
+      <div class="section">
+        <h2>Featured Projects</h2>
+        <p>Here are some project placeholders you can replace with your own repositories:</p>
+        <ul>
+          <li><strong>DSA Practice</strong> — A collection of data structure & algorithm solutions. <em>(Replace with repo link)</em></li>
+          <li><strong>Python Utilities</strong> — Handy scripts for automation. <em>(Replace with repo link)</em></li>
+          <li><strong>HTML Mini-Sites</strong> — Small web pages to learn layout & semantics. <em>(Replace with repo link)</em></li>
+        </ul>
+      </div>
+
+      <!-- Education -->
+      <div class="section half">
+        <h2>Education</h2>
+        <p><strong>Garden City University</strong></p>
+        <p>Undergraduate studies • Computer Science (in progress)</p>
+      </div>
+
+      <!-- Contact -->
+      <div id="contact" class="section half">
+        <h2>Contact</h2>
+        <p>Phone: <a class="link" href="tel:+919999999999">+91 99999 99999</a></p>
+        <p>GitHub: <a class="link" href="https://github.com/raghunath
